@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles.css";
-import { css, cx } from "emotion";
+import { css } from "emotion";
 
 const Testimonial = () => {
   const quotes = {
