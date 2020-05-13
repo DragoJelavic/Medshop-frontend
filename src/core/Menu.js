@@ -62,7 +62,7 @@ const Menu = ({ history }) => (
             >
               <li className="nav-item">
                 <span className=" nav-link" style={{ color: "white" }}>
-                  {name} <i class="fas fa-user-circle ml-1"></i>
+                  {user.name} <i class="fas fa-user-circle ml-1"></i>
                 </span>
               </li>
             </Link>
@@ -76,7 +76,7 @@ const Menu = ({ history }) => (
               style={isActive(history, "/admin/dashboard")}
               to="/admin/dashboard"
             >
-              {name} <i class="fas fa-user-circle ml-1"></i>
+              {user.name} <i class="fas fa-user-circle ml-1"></i>
             </Link>
           </li>
         )}
