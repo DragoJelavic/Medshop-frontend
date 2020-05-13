@@ -11,9 +11,6 @@ const isActive = (history, path) => {
     return { color: "#ffffff" };
   }
 };
-const {
-  user: { name },
-} = isAuthenticated();
 
 const Menu = ({ history }) => (
   <nav className="navbar navbar-expand-md navbar-dark bg-primary">
