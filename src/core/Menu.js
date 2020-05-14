@@ -77,8 +77,10 @@ const Menu = ({ history }) => (
               style={isActive(history, "/admin/dashboard")}
               to="/admin/dashboard"
             >
-              {isAuthenticated().user.name}
-              <i class="fas fa-user-circle ml-1"></i>
+              <span className=" nav-link" style={{ color: "white" }}>
+                {isAuthenticated().user.name}
+                <i class="fas fa-user-circle ml-1"></i>
+              </span>
             </Link>
           </li>
         )}
