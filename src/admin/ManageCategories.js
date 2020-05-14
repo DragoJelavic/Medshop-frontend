@@ -36,8 +36,8 @@ const ManageCategories = () => {
 
   return (
     <Layout
-      title="Manage Categories"
-      description="Perform CRUD on categories"
+      title="Delete Categories"
+      description="This is list of all categories. You can delete those you do not need."
       className="container-fluid"
     >
       <h2 className="text-center">Total {categories.length} categories</h2>
