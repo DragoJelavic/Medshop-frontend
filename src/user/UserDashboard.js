@@ -52,9 +52,9 @@ const Dashboard = () => {
       <div className="card mb-5">
         <h3 className="card-header">User Information</h3>
         <ul className="list-group">
-          <li className="list-group-item mr-2">{name}</li>
-          <li className="list-group-item mr-2">{email}</li>
-          <li className="list-group-item mr-2">
+          <li className="list-group-item pr-2">{name}</li>
+          <li className="list-group-item pr-2">{email}</li>
+          <li className="list-group-item pr-2">
             {role === 1 ? "Admin" : "Registered User"}
           </li>
         </ul>
