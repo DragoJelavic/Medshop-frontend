@@ -60,12 +60,8 @@ const Menu = ({ history }) => (
               style={isActive(history, "/user/dashboard")}
               to="/user/dashboard"
             >
-              <li className="nav-item">
-                <span className=" nav-link" style={{ color: "white" }}>
-                  {isAuthenticated().user.name}
-                  <i class="fas fa-user-circle ml-1"></i>
-                </span>
-              </li>
+              {isAuthenticated().user.name}
+              <i class="fas fa-user-circle ml-1"></i>
             </Link>
           </li>
         )}
@@ -77,12 +73,8 @@ const Menu = ({ history }) => (
               style={isActive(history, "/admin/dashboard")}
               to="/admin/dashboard"
             >
-              <li className="nav-item">
-                <span className=" nav-link" style={{ color: "white" }}>
-                  {isAuthenticated().user.name}
-                  <i class="fas fa-user-circle ml-1"></i>
-                </span>
-              </li>
+              {isAuthenticated().user.name}
+              <i class="fas fa-user-circle ml-1"></i>
             </Link>
           </li>
         )}
