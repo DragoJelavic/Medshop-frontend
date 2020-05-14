@@ -75,7 +75,7 @@ const Dashboard = () => {
                   <hr />
                   {h.products.map((p, i) => {
                     return (
-                      <div key={i}>
+                      <div key={i} className="mb-2">
                         <h6>Product name: {p.name}</h6>
                         <h6>Product price: ${p.price}</h6>
                         <h6>
