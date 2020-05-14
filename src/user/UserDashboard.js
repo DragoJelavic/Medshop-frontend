@@ -71,6 +71,7 @@ const Dashboard = () => {
             {history.map((h, i) => {
               return (
                 <div>
+                  <h5>Order ID: {h._id}</h5>
                   <hr />
                   {h.products.map((p, i) => {
                     return (
