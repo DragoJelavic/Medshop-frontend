@@ -49,12 +49,12 @@ const Dashboard = () => {
 
   const userInfo = () => {
     return (
-      <div className="card mb-5 mr-2">
+      <div className="card mb-5 uInfo">
         <h3 className="card-header">User Information</h3>
-        <ul className="list-group mr-2">
-          <li className="list-group-item mr-2">{name}</li>
-          <li className="list-group-item mr-2">{email}</li>
-          <li className="list-group-item mr-2">
+        <ul className="list-group uInfo">
+          <li className="list-group-item">{name}</li>
+          <li className="list-group-item">{email}</li>
+          <li className="list-group-item">
             {role === 1 ? "Admin" : "Registered User"}
           </li>
         </ul>

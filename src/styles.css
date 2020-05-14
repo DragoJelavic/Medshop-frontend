@@ -11,6 +11,9 @@
 .jumbotron :hover {
   border-radius: 0px;
 }
+.uInfo{
+  margin-right: 8px;
+}
 .nav-item :hover {
   border-bottom: 1.5px solid white;
 }
