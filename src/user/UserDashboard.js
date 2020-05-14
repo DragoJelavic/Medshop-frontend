@@ -70,7 +70,7 @@ const Dashboard = () => {
           <li className="list-group-item">
             {history.map((h, i) => {
               return (
-                <div>
+                <div className="mb-2">
                   <h5>Order ID: {h._id}</h5>
                   <hr />
                   {h.products.map((p, i) => {
