@@ -71,16 +71,18 @@ const Menu = ({ history }) => (
         )}
 
         {isAuthenticated() && isAuthenticated().user.role === 1 && (
-          <li className="nav-item">
+          <li className="nav-item mr-1">
             <Link
               className="nav-link"
               style={isActive(history, "/admin/dashboard")}
               to="/admin/dashboard"
             >
-              <span className=" nav-link" style={{ color: "white" }}>
-                {isAuthenticated().user.name}
-                <i class="fas fa-user-circle ml-1"></i>
-              </span>
+              <li className="nav-item">
+                <span className=" nav-link" style={{ color: "white" }}>
+                  {isAuthenticated().user.name}
+                  <i class="fas fa-user-circle ml-1"></i>
+                </span>
+              </li>
             </Link>
           </li>
         )}
