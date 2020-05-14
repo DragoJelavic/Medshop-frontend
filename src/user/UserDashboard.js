@@ -51,7 +51,7 @@ const Dashboard = () => {
     return (
       <div className="card mb-5 mr-2">
         <h3 className="card-header">User Information</h3>
-        <ul className="list-group">
+        <ul className="list-group mr-2">
           <li className="list-group-item">{name}</li>
           <li className="list-group-item">{email}</li>
           <li className="list-group-item">
