@@ -81,6 +81,8 @@ const Dashboard = () => {
                         <h6>
                           Purchased date: {moment(h.createdAt).calendar()}
                         </h6>
+                        <hr />
+                        <br />
                       </div>
                     );
                   })}
