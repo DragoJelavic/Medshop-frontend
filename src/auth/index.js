@@ -43,11 +43,10 @@ export const authenticate = (data, next) => {
 };
 
 export const signout = (next) => {
-    
   if (typeof window !== "undefined") {
     localStorage.removeItem("jwt");
-    
     next();
+    emptyCart();
     return fetch(`${API}/signout`, {
       method: "GET",
     })
