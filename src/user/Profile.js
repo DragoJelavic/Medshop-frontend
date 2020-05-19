@@ -62,9 +62,9 @@ const Profile = ({ match }) => {
     }
   };
   const goBack = () => (
-    <div className="mt-5">
+    <div className="ml-2">
       <Link to="/user/dashboard">
-        <button className="btn btn-warning">Cancel</button>
+        <button className="btn btn-danger">Cancel</button>
       </Link>
     </div>
   );
@@ -98,10 +98,12 @@ const Profile = ({ match }) => {
           value={password}
         />
       </div>
-      <button onClick={clickSubmit} className="btn btn-primary">
-        Submit
-      </button>
-      {goBack()}
+      <div className="row">
+        <button onClick={clickSubmit} className="btn btn-primary">
+          Submit
+        </button>
+        {goBack()}
+      </div>
     </form>
   );
 
