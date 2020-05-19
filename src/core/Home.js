@@ -64,7 +64,7 @@ const Home = () => {
 
       <Search />
       <h2 className="mb-4">New Arrivals</h2>
-      <div className="row align-items-center">
+      <div className="row text-center">
         {productsByArrival.map((product, i) => (
           <div key={i} className="col-4 mb-3">
             <Card product={product} />
@@ -73,7 +73,7 @@ const Home = () => {
       </div>
 
       <h2 className="mb-4">Best Sellers</h2>
-      <div className="row align-items-center">
+      <div className="row text-center">
         {productsBySell.map((product, i) => (
           <div key={i} className="col-4 mb-3">
             <Card product={product} />
