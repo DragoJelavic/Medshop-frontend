@@ -60,6 +60,13 @@ const Profile = ({ match }) => {
       return <Redirect to="/cart" />;
     }
   };
+  const goBack = () => (
+    <div className="mt-5">
+      <Link to="/user/dashboard">
+        <button className="btn btn-warning">Cancel</button>
+      </Link>
+    </div>
+  );
 
   const profileUpdate = (name, email, password) => (
     <form>
@@ -90,10 +97,10 @@ const Profile = ({ match }) => {
           value={password}
         />
       </div>
-
       <button onClick={clickSubmit} className="btn btn-primary">
         Submit
       </button>
+      goBack();
     </form>
   );
 
