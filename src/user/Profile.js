@@ -101,7 +101,7 @@ const Profile = ({ match }) => {
       <button onClick={clickSubmit} className="btn btn-primary">
         Submit
       </button>
-      goBack();
+      {goBack()}
     </form>
   );
 
