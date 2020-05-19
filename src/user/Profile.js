@@ -99,7 +99,7 @@ const Profile = ({ match }) => {
         />
       </div>
       <div className="row">
-        <button onClick={clickSubmit} className="btn btn-primary">
+        <button onClick={clickSubmit} className="btn btn-primary ml-2">
           Submit
         </button>
         {goBack()}
