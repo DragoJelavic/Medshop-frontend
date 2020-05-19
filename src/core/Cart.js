@@ -26,8 +26,10 @@ const Cart = () => {
             showRemoveProductButton={true}
           />
         ))}
-        <button className="btn btn-success text-light">
-          <Link to="/shop">Continue shopping</Link>
+        <button className="btn btn-success">
+          <Link className="text-white" to="/shop">
+            Continue shopping
+          </Link>
         </button>
       </div>
     );
