@@ -38,8 +38,10 @@ const Cart = () => {
   const noItemsMessage = () => (
     <h2>
       Your cart is empty. <br />
-      <button className="btn btn-success">
-        <Link to="/shop">Continue shopping</Link>
+      <button className="mt-2 ml-2 mb-3 btn btn-success">
+        <Link className="text-white" to="/shop">
+          Continue shopping
+        </Link>
       </button>
     </h2>
   );
