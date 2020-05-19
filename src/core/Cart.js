@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import Layout from "./Layout";
 import { getCart } from "./cartHelpers";
 import Card from "./Card";
@@ -11,6 +11,10 @@ const Cart = () => {
   useEffect(() => {
     setItems(getCart());
   }, [items]);
+
+  const continueShopping = () => {
+    return <Redirect to="/shop" />;
+  };
 
   const showItems = (items) => {
     return (
@@ -26,10 +30,11 @@ const Cart = () => {
             showRemoveProductButton={true}
           />
         ))}
-        <button className="mt-2 ml-2 btn btn-success">
-          <Link className="text-white" to="/shop">
-            Continue shopping
-          </Link>
+        <button
+          className="mt-2 ml-2 btn btn-success"
+          onClick={continueShopping}
+        >
+          Continue shopping
         </button>
       </div>
     );
