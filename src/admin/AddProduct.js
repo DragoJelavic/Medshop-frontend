@@ -189,7 +189,7 @@ const AddProduct = () => {
     );
 
   const goBack = () => (
-    <div className="mt-5">
+    <div className="mt-3">
       <Link to="/admin/dashboard" className="text-warning">
         Back to Dashboard
       </Link>

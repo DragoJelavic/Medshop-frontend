@@ -106,7 +106,7 @@ const Orders = () => {
                   }
                 >
                   <h2 className="mb-5">
-                    <span className="bg-primary">Order ID: {o._id}</span>
+                    <span>Order ID: {o._id}</span>
                   </h2>
 
                   <ul className="list-group mb-2">
@@ -136,7 +136,7 @@ const Orders = () => {
                     key={pIndex}
                     style={{
                       padding: "20px",
-                      border: "1px solid indigo",
+                      border: "1px solid rgb(202, 24, 24)",
                     }}
                   >
                     {showInput("Product name", p.name)}
