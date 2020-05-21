@@ -31,6 +31,13 @@ const Users = () => {
       return <h1 className="text-danger">No users</h1>;
     }
   };
+  const goBack = () => (
+    <div className="mt-5">
+      <Link to="/admin/dashboard" className="text-warning">
+        Back to Dashboard
+      </Link>
+    </div>
+  );
 
   return (
     <Layout
@@ -40,6 +47,7 @@ const Users = () => {
     >
       {showUsersLength()}
       <br />
+      {goBack()}
       <div className="container">
         <div className="row mt-8">
           {users.map((x, userIndex) => {

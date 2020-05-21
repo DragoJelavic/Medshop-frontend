@@ -29,6 +29,13 @@ const ManageCategories = () => {
       }
     });
   };
+  const goBack = () => (
+    <div className="mt-5">
+      <Link to="/admin/dashboard" className="text-warning">
+        Back to Dashboard
+      </Link>
+    </div>
+  );
 
   useEffect(() => {
     loadCategories();
@@ -64,6 +71,7 @@ const ManageCategories = () => {
               </div>
             </div>
           ))}
+          {goBack()}
         </div>
       </div>
     </Layout>
