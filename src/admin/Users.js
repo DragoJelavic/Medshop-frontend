@@ -4,6 +4,8 @@ import { isAuthenticated } from "../auth";
 import { listUsers } from "./apiAdmin";
 import moment from "moment";
 import avatar from "../default-avatar.jpg";
+import { Link } from "react-router-dom";
+
 const Users = () => {
   const [users, setUsers] = useState([]);
   const { user, token } = isAuthenticated();
