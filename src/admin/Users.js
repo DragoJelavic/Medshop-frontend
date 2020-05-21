@@ -24,8 +24,6 @@ const Users = () => {
     loadUsers();
   }, []);
 
-  console.log(users.length);
-
   const showUsersLength = () => {
     if (users.length > 0) {
       return <h1>Number of users: {users.length}</h1>;

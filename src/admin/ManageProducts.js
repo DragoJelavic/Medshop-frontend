@@ -76,8 +76,8 @@ const ManageProducts = () => {
               </div>
             </div>
           ))}
-          {goBack()}
         </div>
+        {goBack()}
       </div>
     </Layout>
   );
