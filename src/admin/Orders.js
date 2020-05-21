@@ -94,7 +94,7 @@ const Orders = () => {
           {orders.map((o, oIndex) => {
             return (
               <div
-                className="mt-5"
+                className="mt-5 p-1"
                 key={oIndex}
                 style={{ border: "1px solid navy" }}
               >
