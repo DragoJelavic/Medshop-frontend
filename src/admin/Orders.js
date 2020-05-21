@@ -96,7 +96,7 @@ const Orders = () => {
               <div
                 className="mt-5"
                 key={oIndex}
-                style={{ borderBottom: "5px solid indigo" }}
+                style={{ border: "1px solid navy" }}
               >
                 <div
                   className={
