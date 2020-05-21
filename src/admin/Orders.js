@@ -119,7 +119,7 @@ const Orders = () => {
                       Ordered by: {o.user.name}
                     </li>
                     <li className="list-group-item">
-                      Ordered on: {moment(o.createdAt)..format('LLL')}
+                      Ordered on: {moment(o.createdAt).format("LLL")}
                     </li>
                     <li className="list-group-item">
                       Delivery address: {o.address}
