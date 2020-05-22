@@ -30,7 +30,7 @@ const ManageCategories = () => {
     });
   };
   const goBack = () => (
-    <div className="mt-5">
+    <div className="mt-3 ml-2">
       <Link to="/admin/dashboard" className="text-warning">
         Back to Dashboard
       </Link>
