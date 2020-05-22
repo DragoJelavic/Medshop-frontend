@@ -71,8 +71,8 @@ const ManageCategories = () => {
               </div>
             </div>
           ))}
-          {goBack()}
         </div>
+        {goBack()}
       </div>
     </Layout>
   );
