@@ -32,7 +32,7 @@ const Users = () => {
     }
   };
   const goBack = () => (
-    <div className="mt-5">
+    <div className="mt-2 ml-1">
       <Link to="/admin/dashboard" className="text-warning">
         Back to Dashboard
       </Link>
