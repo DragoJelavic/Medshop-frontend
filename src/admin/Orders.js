@@ -3,6 +3,7 @@ import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { listOrders, getStatusValues, updateOrderStatus } from "./apiAdmin";
 import moment from "moment";
+import ScrollToTop from "react-scroll-up";
 
 const Orders = () => {
   const [orders, setOrders] = useState([]);
@@ -37,7 +38,7 @@ const Orders = () => {
 
   const showOrdersLength = () => {
     if (orders.length > 0) {
-      return <h3 className="text-danger">Total orders: {orders.length}</h3>;
+      return <h3 className="text-danger">Last {orders.length} orders</h3>;
     } else {
       return <h3 className="text-danger">No orders</h3>;
     }
@@ -85,6 +86,9 @@ const Orders = () => {
       description={`G'day ${user.name}, you can manage all the orders here`}
       className="container-fluid"
     >
+      <ScrollToTop showUnder={160}>
+        <span>UP</span>
+      </ScrollToTop>
       <div className="row">
         <div className="col-md-8 offset-md-2">
           {showOrdersLength()}
