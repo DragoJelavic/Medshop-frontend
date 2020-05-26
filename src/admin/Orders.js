@@ -87,7 +87,9 @@ const Orders = () => {
       className="container-fluid"
     >
       <ScrollToTop showUnder={300}>
-        <i class="far fa-arrow-alt-circle-up arrow"></i>
+        <span style="font-size: 48px; color: Dodgerblue;">
+          <i class="far fa-arrow-alt-circle-up arrow"></i>
+        </span>
       </ScrollToTop>
       <div className="row">
         <div className="col-md-8 offset-md-2">

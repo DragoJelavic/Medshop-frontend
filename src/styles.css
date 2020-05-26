@@ -6,15 +6,7 @@
 /**
  * border radius
  */
-.arrow {
-  height: 20px;
-  width: 20px;
-}
-.arrow :hover {
-  background-color: rgb(16, 219, 26);
-  height: 22px;
-  width: 22px;
-}
+
 .btn,
 .jumbotron :hover {
   border-radius: 0px;
