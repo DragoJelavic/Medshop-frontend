@@ -86,8 +86,8 @@ const Orders = () => {
       description={`G'day ${user.name}, you can manage all the orders here`}
       className="container-fluid"
     >
-      <ScrollToTop showUnder={160}>
-        <span>UP</span>
+      <ScrollToTop showUnder={300}>
+        <i class="far fa-arrow-alt-circle-up"></i>
       </ScrollToTop>
       <div className="row">
         <div className="col-md-8 offset-md-2">
