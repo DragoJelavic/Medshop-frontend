@@ -5,6 +5,7 @@ import { listUsers } from "./apiAdmin";
 import moment from "moment";
 import avatar from "../default-avatar.jpg";
 import { Link } from "react-router-dom";
+import ScrollToTop from "react-scroll-up";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -48,6 +49,12 @@ const Users = () => {
       {showUsersLength()}
       <br />
       {goBack()}
+      <ScrollToTop showUnder={300}>
+        <i
+          class="far fa-arrow-alt-circle-up arrow"
+          style={{ color: "limegreen", fontSize: "48px" }}
+        ></i>
+      </ScrollToTop>
       <div className="container">
         <div className="row mt-8">
           {users.map((x, userIndex) => {
