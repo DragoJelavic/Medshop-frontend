@@ -3,6 +3,7 @@ import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { listOrders, getStatusValues, updateOrderStatus } from "./apiAdmin";
 import moment from "moment";
+import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-up";
 
 const Orders = () => {
@@ -80,6 +81,14 @@ const Orders = () => {
     </div>
   );
 
+  const goBack = () => (
+    <div className="mt-2 ml-1">
+      <Link to="/admin/dashboard" className="text-warning">
+        Back to Dashboard
+      </Link>
+    </div>
+  );
+
   return (
     <Layout
       title="Orders"
@@ -95,7 +104,7 @@ const Orders = () => {
       <div className="row">
         <div className="col-md-8 offset-md-2">
           {showOrdersLength()}
-
+          {goBack}
           {orders.map((o, oIndex) => {
             return (
               <div
