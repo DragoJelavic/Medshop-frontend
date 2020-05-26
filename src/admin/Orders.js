@@ -89,7 +89,7 @@ const Orders = () => {
       <ScrollToTop showUnder={300}>
         <i
           class="far fa-arrow-alt-circle-up arrow"
-          style={{ backgroundColor: "lightblue", fontSize: "48px" }}
+          style={{ color: "lightblue", fontSize: "48px" }}
         ></i>
       </ScrollToTop>
       <div className="row">
