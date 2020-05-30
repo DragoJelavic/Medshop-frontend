@@ -4,6 +4,7 @@ import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
 import { getPurchaseHistory } from "./apiUser";
 import moment from "moment";
+import ScrollToTop from "react-scroll-up";
 
 const Dashboard = () => {
   const [history, setHistory] = useState([]);
@@ -106,6 +107,12 @@ const Dashboard = () => {
         <div className="col-9">
           {userInfo()}
           {purchaseHistory(history)}
+          <ScrollToTop showUnder={300}>
+            <i
+              class="far fa-arrow-alt-circle-up arrow"
+              style={{ color: "limegreen", fontSize: "48px" }}
+            ></i>
+          </ScrollToTop>
         </div>
       </div>
     </Layout>
