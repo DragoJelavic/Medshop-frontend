@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
-import { listAllOrders, getStatusValues, updateOrderStatus } from "./apiAdmin";
+import { getStatusValues, updateOrderStatus,listAllOrders } from "./apiAdmin";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-up";
@@ -13,7 +13,7 @@ const allOrders = () => {
   const { user, token } = isAuthenticated();
 
   const loadOrders = () => {
-    listOrders(user._id, token).then((data) => {
+    listAllOrders(user._id, token).then((data) => {
       if (data.error) {
         console.log(data.error);
       } else {
