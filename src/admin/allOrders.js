@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
-import { listOrders, getStatusValues, updateOrderStatus } from "./apiAdmin";
+import { listAllOrders, getStatusValues, updateOrderStatus } from "./apiAdmin";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-up";
 
-const Orders = () => {
+const allOrders = () => {
   const [orders, setOrders] = useState([]);
   const [statusValues, setStatusValues] = useState([]);
 
@@ -89,14 +89,6 @@ const Orders = () => {
     </div>
   );
 
-  const archive = () => (
-    <div className="mt-2 ml-1">
-      <Link className="nav-link" to="/admin/allOrders">
-        View all Orders
-      </Link>
-    </div>
-  );
-
   return (
     <Layout
       title="Orders"
@@ -113,7 +105,6 @@ const Orders = () => {
         <div className="col-md-8 offset-md-2">
           {showOrdersLength()}
           {goBack()}
-          {archive()}
           {orders.map((o, oIndex) => {
             return (
               <div
@@ -177,4 +168,4 @@ const Orders = () => {
   );
 };
 
-export default Orders;
+export default allOrders;
