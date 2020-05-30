@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
-import { getStatusValues, updateOrderStatus,listAllOrders } from "./apiAdmin";
+import { getStatusValues, updateOrderStatus, listAllOrders } from "./apiAdmin";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-up";
 
 const allOrders = () => {
-  const [orders, setOrders] = useState([]);
+  const [ordersAll, setOrdersAll] = useState([]);
   const [statusValues, setStatusValues] = useState([]);
 
   const { user, token } = isAuthenticated();
@@ -17,7 +17,7 @@ const allOrders = () => {
       if (data.error) {
         console.log(data.error);
       } else {
-        setOrders(data);
+        setOrdersAll(data);
       }
     });
   };
@@ -38,8 +38,8 @@ const allOrders = () => {
   }, []);
 
   const showOrdersLength = () => {
-    if (orders.length > 0) {
-      return <h3 className="text-danger">Last {orders.length} orders</h3>;
+    if (ordersAll.length > 0) {
+      return <h3 className="text-danger">Last {ordersAll.length} orders</h3>;
     } else {
       return <h3 className="text-danger">No orders</h3>;
     }
@@ -105,7 +105,7 @@ const allOrders = () => {
         <div className="col-md-8 offset-md-2">
           {showOrdersLength()}
           {goBack()}
-          {orders.map((o, oIndex) => {
+          {ordersAll.map((o, oIndex) => {
             return (
               <div
                 className="mt-5 p-3"
