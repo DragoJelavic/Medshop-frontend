@@ -6,7 +6,7 @@ import moment from "moment";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-up";
 
-const allOrders = () => {
+const AllOrders = () => {
   const [ordersAll, setOrdersAll] = useState([]);
   const [statusValues, setStatusValues] = useState([]);
 
@@ -168,4 +168,4 @@ const allOrders = () => {
   );
 };
 
-export default allOrders;
+export default AllOrders;
