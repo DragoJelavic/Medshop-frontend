@@ -39,9 +39,9 @@ const Orders = () => {
 
   const showOrdersLength = () => {
     if (orders.length > 0) {
-      return <h3 className="text-danger">Last {orders.length} orders</h3>;
+      return <h2 className="text-danger">Last {orders.length} orders</h2>;
     } else {
-      return <h3 className="text-danger">No orders</h3>;
+      return <h2 className="text-danger">No orders</h2>;
     }
   };
 
@@ -112,8 +112,10 @@ const Orders = () => {
       <div className="row">
         <div className="col-md-8 offset-md-2">
           {showOrdersLength()}
-          {goBack()}
-          {archive()}
+          <div className="mt-1">
+            {goBack()}
+            {archive()}
+          </div>
           {orders.map((o, oIndex) => {
             return (
               <div
