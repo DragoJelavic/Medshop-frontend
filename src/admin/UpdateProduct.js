@@ -238,8 +238,8 @@ const UpdateProduct = ({ match }) => {
           {showLoading()}
           {showSuccess()}
           {showError()}
-          {goBack()}
           {newPostForm()}
+          {goBack()}
           {redirectUser()}
         </div>
       </div>
