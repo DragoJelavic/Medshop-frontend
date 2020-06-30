@@ -69,7 +69,7 @@ const Orders = () => {
       <h3 className="mark mb-4">Status: {o.status}</h3>
       <select
         className="form-control"
-        onChange={(e) => handleStatusChange(e, o._id)}
+        onInput={(e) => handleStatusChange(e, o._id)} //onInput
       >
         <option>Update Status</option>
         {statusValues.map((status, index) => (
