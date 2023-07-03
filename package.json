@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "braintree-web": "^3.95.0",
-    "braintree-web-drop-in-react": "^1.1.1",
+    "braintree-web-drop-in-react": "^1.2.1",
     "cors": "^2.8.5",
     "emotion": "^10.0.27",
     "moment": "^2.29.4",
