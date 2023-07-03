@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "braintree-web": "^3.45.0",
+    "braintree-web": "^3.95.0",
     "braintree-web-drop-in-react": "^1.1.1",
     "cors": "^2.8.5",
     "emotion": "^10.0.27",
