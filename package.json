@@ -9,7 +9,7 @@
     "emotion": "^10.0.27",
     "moment": "^2.29.4",
     "query-string": "^6.5.0",
-    "react": "^16.8.6",
+    "react": "^16.14.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.3.4",
     "react-scripts": "^5.0.1",
